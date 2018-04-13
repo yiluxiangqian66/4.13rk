@@ -28,7 +28,21 @@
         <section>
             <div class="swiper-container parent">
                 <div class=swiper-wrapper>
-                    <div class="swiper-slide">1</div>
+                    <div class="swiper-slide ">
+                        <div class="swiper-container list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=20877127,2071405751&fm=27&gp=0.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523595047605&di=3ef62bcf25758335119af8b1785199da&imgtype=0&src=http%3A%2F%2Fimg17.3lian.com%2Fd%2Ffile%2F201702%2F22%2Fa766abc01991c0bb1a7baae8d6cc5d76.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=20877127,2071405751&fm=27&gp=0.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="swiper-slide" style="background:skyblue">2</div>
                     <div class="swiper-slide" style="background:pink">3</div>
                     <div class="swiper-slide" style="background:#f09">4</div>
@@ -53,6 +67,10 @@
         paginationBulletRender: function(swiper, index, className) {
             return "<span class='" + className + "'>" + arr[index] + "</span>"
         }
+    })
+    new Swiper('.list', {
+        autoplay: 1000,
+        loop: true
     })
 </script>
 

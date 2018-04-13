@@ -72,6 +72,16 @@ nav .input i.icon {
   padding-top: .6rem;
 }
 
+.parent .list {
+  width: 100%;
+  height: 3rem;
+}
+
+.parent .list img {
+  width: 100%;
+  height: 100%;
+}
+
 .header {
   display: flex;
   position: fixed;
