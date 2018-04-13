@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge;chrome=1">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="fonts2/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <div class="input">
+                <input type="text" placeholder="捉妖记2">
+                <i class="icon iconfont icon-fangdajing"></i>
+            </div>
+            <i class="icon iconfont icon-wode"></i>
+            <i class="icon iconfont icon-xiazai"></i>
+            <i class="icon iconfont icon-gongzuo"></i>
+        </nav>
+        <section>
+            <div class="swiper-container parent">
+                <div class=swiper-wrapper>
+                    <div class="swiper-slide">1</div>
+                    <div class="swiper-slide" style="background:skyblue">2</div>
+                    <div class="swiper-slide" style="background:pink">3</div>
+                    <div class="swiper-slide" style="background:#f09">4</div>
+                    <div class="swiper-slide" style="background:skyblue">5</div>
+                    <div class="swiper-slide" style="background:pink">6</div>
+                </div>
+                <div class="swiper-pagination header"></div>
+            </div>
+        </section>
+        <footer>
+            1
+        </footer>
+    </div>
+</body>
+<script src="swiper/swiper-3.4.2.min.js"></script>
+<script>
+    var arr = ['精选', '爱看', '电视剧', '电影', '综艺', '少儿'];
+    new Swiper('.parent', {
+        loop: true,
+        pagination: '.header',
+        paginationClickable: true,
+        paginationBulletRender: function(swiper, index, className) {
+            return "<span class='" + className + "'>" + arr[index] + "</span>"
+        }
+    })
+</script>
+
+</html>
